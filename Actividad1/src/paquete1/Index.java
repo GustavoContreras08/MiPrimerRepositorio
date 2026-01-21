@@ -100,7 +100,7 @@ public class Index {
 						        p.getApellido().equalsIgnoreCase(Apellido) &&
 						        p.getPais().equalsIgnoreCase(Pais)) {
 						        existe = true;
-						        break;
+						        
 						    }
 						}
 						

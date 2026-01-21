@@ -41,5 +41,9 @@ public class Implementacion implements IMetodos{
 	public void contar(){
 		System.out.println("Existen " + lista.size() + " Productos registrados");
 	}
+	
+	public void limpiar() {
+		lista.clear();
+	}
 
 }

@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.mx.Libro.Libro"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="Implementacion.ImpGenerica"/>
+    <fullyQualifiedTypeName name="Entidades.Fruta"/>
+    <fullyQualifiedTypeName name="Implementacion.ImpFruta"/>
+    <fullyQualifiedTypeName name="Implementacion.ImpGenericaAct4"/>
+    <fullyQualifiedTypeName name="Entidades.Archivo"/>
+    <fullyQualifiedTypeName name="Implementacion.ImpArchivo"/>
+    <fullyQualifiedTypeName name="Implementacion.ImpElectrodomestico"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Entidades.Electrodomestico"/>
+</qualifiedTypeNameHistroy>

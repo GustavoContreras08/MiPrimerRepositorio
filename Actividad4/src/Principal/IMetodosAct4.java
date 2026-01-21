@@ -1,0 +1,11 @@
+package Principal;
+
+public interface IMetodosAct4 {
+	
+	public void create(Object key, Object value);
+	public void read();
+	public void update(Object key, Object value);
+	public void delete(Object key);
+	public Object search(int index);
+
+}

@@ -227,6 +227,7 @@ public class Principal {
 					break;
 					
 				case 7:
+					
 					System.out.println("Saliendo del menu, Hasta Luego");
 					break;
 					default:
