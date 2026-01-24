@@ -38,7 +38,7 @@ public class Index {
 		auxA = (Archivo) impA.search(1);
 		System.out.println("Encontrado: " + auxA);
 				
-		impA.delete(f1.getNombre());
+		impA.delete(2);
 		impA.read();
 				
 		impA.contar();		
@@ -51,7 +51,7 @@ public class Index {
 		auxE = (Electrodomestico) impE.search(1);
 		System.out.println("Encontrado: " + auxE);
 				
-		impE.delete(e3.getNombre());
+		impE.delete(2);
 		impE.read();
 				
 		impE.contar();	

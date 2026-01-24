@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.mx.Libro.Libro"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="Implementacion.ImpGenerica"/>
     <fullyQualifiedTypeName name="Entidades.Fruta"/>
     <fullyQualifiedTypeName name="Implementacion.ImpFruta"/>
@@ -9,8 +8,35 @@
     <fullyQualifiedTypeName name="Entidades.Archivo"/>
     <fullyQualifiedTypeName name="Implementacion.ImpArchivo"/>
     <fullyQualifiedTypeName name="Implementacion.ImpElectrodomestico"/>
+    <fullyQualifiedTypeName name="Entidades.Electrodomestico"/>
+    <fullyQualifiedTypeName name="com.mx.Herencia.Hijo"/>
+    <fullyQualifiedTypeName name="com.mx.Herencia.Perro"/>
+    <fullyQualifiedTypeName name="com.mx.Herencia.Gato"/>
+    <fullyQualifiedTypeName name="com.mx.Herencia.Animal"/>
+    <fullyQualifiedTypeName name="com.mx.ClaseAbstracta.Profesionista"/>
+    <fullyQualifiedTypeName name="com.mx.ClaseAbstracta.Abogado"/>
+    <fullyQualifiedTypeName name="com.mx.ClaseAbstracta.Medico"/>
+    <fullyQualifiedTypeName name="com.mx.Empleado.Empleado"/>
+    <fullyQualifiedTypeName name="com.mx.Empleado.EmpleadoTiempoCompleto"/>
+    <fullyQualifiedTypeName name="com.mx.Empleado.EmpleadoPorHoras"/>
+    <fullyQualifiedTypeName name="com.mx.Polimorfismo.Deportivo"/>
+    <fullyQualifiedTypeName name="com.mx.Polimorfismo.Turismo"/>
+    <fullyQualifiedTypeName name="com.mx.Polimorfismo.PickUp"/>
+    <fullyQualifiedTypeName name="com.mx.Polimorfismo.Automovil"/>
+    <fullyQualifiedTypeName name="com.mx.Diccionario.IMetodos"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.mx.Diccionario.Palabras"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.mx.Diccionario.ImplemDic"/>
+    <fullyQualifiedTypeName name="com.mx.EstaticosYConstantes.Principal"/>
+    <fullyQualifiedTypeName name="com.mx.ClaseCuenta.CuentaAhorro"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="Entidades.Electrodomestico"/>
+    <fullyQualifiedTypeName name="Entidad.Alumno"/>
+    <fullyQualifiedTypeName name="Principal.ISaludo"/>
+    <fullyQualifiedTypeName name="SeriesYVideojuegos.Serie"/>
+    <fullyQualifiedTypeName name="SeriesYVideojuegos.Index"/>
+    <fullyQualifiedTypeName name="SeriesYVideojuegos.VideoJuego"/>
 </qualifiedTypeNameHistroy>

@@ -31,9 +31,9 @@ public class ImpGenericaAct4 implements IMetodosAct4{
 	}
 
 	@Override
-	public void delete(Object key) {
+	public void delete(int index) {
 		// TODO Auto-generated method stub
-		lista.remove(key);
+		lista.remove(index);
 		
 	}
 
