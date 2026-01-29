@@ -1,0 +1,85 @@
+--1.- CALCULAR LA SUMA DE LOS DIGITOS DE UN NUMERO EJEMPLO: V:=1234, SALIDA = 10.
+DECLARE
+    N NUMBER := 1244;
+    R NUMBER := 0;
+BEGIN
+    WHILE N > 0 
+    LOOP
+        R := R + MOD(N, 10); 
+        N := TRUNC(N / 10);       
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('RESULTADO DE SUMA: ' ||R);
+END;
+/
+
+--2.- MOSTRAR LA CUENTA REGRESIVA DE 20 A 0 EN NUMEROS PARES
+DECLARE
+BEGIN
+    FOR I IN REVERSE 0 .. 20 LOOP
+        IF MOD(I, 2) = 0 THEN
+            DBMS_OUTPUT.PUT_LINE('CUENTA REGRESIVA: '||I);
+        END IF;
+    END LOOP;
+END;
+/
+
+--3.-CALCULAR LA POTENCIA DE UN NUMERO(3^4)
+DECLARE
+    NUM NUMBER := 4;
+    POTENCIA NUMBER := 2;
+    RESUL NUMBER :=0;
+BEGIN
+    RESUL := POWER(NUM,POTENCIA);
+    DBMS_OUTPUT.PUT_LINE('RESULTADO DE POTENCIA: '||RESUL);
+END;
+/
+
+--4.NOMBRE
+DECLARE
+    NOMBRE NVARCHAR2(30) := 'GUSTAVO';
+BEGIN
+    FOR I IN 1..LENGTH(NOMBRE)
+        LOOP
+            DBMS_OUTPUT.PUT_LINE(SUBSTR(NOMBRE, I, 1));
+        END LOOP;
+END;
+/
+
+--5.-MOSTRAR SI UN NUMERO ES PRIMO
+DECLARE
+    NUMERO NUMBER := 2;
+    I NUMBER := 2;
+    ES_PRIMO BOOLEAN := TRUE;
+BEGIN
+    IF NUMERO <= 1 THEN
+        ES_PRIMO := FALSE;
+    ELSE
+        WHILE I <= TRUNC(SQRT(NUMERO)) 
+        LOOP
+            IF MOD(NUMERO, I) = 0 THEN
+                ES_PRIMO := FALSE;
+                EXIT;
+            END IF;
+            I := I + 1;
+        END LOOP;
+    END IF;
+
+    IF ES_PRIMO THEN
+        DBMS_OUTPUT.PUT_LINE(NUMERO || ' ES PRIMO');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE(NUMERO || ' NO ES PRIMO');
+    END IF;
+END;
+/
+
+--6.- MOSTRAR LAS TABLAS DE MILTIPLAR DEL 1 AL 10 
+BEGIN
+    FOR I IN 1..10 LOOP
+            DBMS_OUTPUT.PUT_LINE('Tabla del ' || I || ':');
+        FOR J IN 1..10 LOOP
+            DBMS_OUTPUT.PUT_LINE(I || ' x ' || J || ' = ' || (I * J));
+        END LOOP;
+    END LOOP;
+END;
+/
