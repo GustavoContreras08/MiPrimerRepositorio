@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header"></div>
+            <h2>Registrar Padres</h2>
+    </div>
+     <div class="card-body"></div>
+        <th>Ingresa los siguientes datos de los padres</th>
+        <form>
+            <div class="form-group">
+                <label for="idPadre">ID PADRE</label>
+                <input type="number" name="idPadre" class="form-control" placeholder="Escribe el ID del padre"
+                [(ngModel)]="padre.idPadre">
+                <!--ng model es una directiva de tipo bidireccional para formularios que nos permiten asociar valores de tipo input para un atributo de la entidad, ejemplo el id
+                Este imput recibira un valor de tipo numerico pero asociado que era el id, por el ngModel-->
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" name="nombre" class="form-control" placeholder="Escribe el nombre del padre"
+                [(ngModel)]="padre.nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">APELLIDO</label>
+                <input type="text" name="apellido" class="form-control" placeholder="Escribe el apellido del padre"
+                [(ngModel)]="padre.apellido">
+            </div>
+
+            <div class="form-group">
+                <label for="edad">EDAD</label>
+                <input type="number" name="edad" class="form-control" placeholder="Escribe la edad del padre"
+                [(ngModel)]="padre.edad">
+            </div>
+
+            <div class="form-group">
+                <label for="trabajo">TRABAJO</label>
+                <input type="text" name="trabajo" class="form-control" placeholder="Escribe el trabajo del padre"
+                [(ngModel)]="padre.trabajo">
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-success" (click)="guardar()">Guardar</button>
+            </div>
+        </form>
+</div>

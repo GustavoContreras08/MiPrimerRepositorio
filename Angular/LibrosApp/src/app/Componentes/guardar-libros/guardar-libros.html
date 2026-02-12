@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header"></div>
+            <h2>Registrar computadoras</h2>
+    </div>
+     <div class="card-body"></div>
+        <th>Ingresa los siguientes datos de la computadoras</th>
+        <form>
+             <div class="form-group">
+                <label for="idLibro">ID Libro</label>
+                <input type="number" name="idLibro" class="form-control" placeholder="Escribe el ID de el Libro"
+                [(ngModel)]="libro.idLibro">
+                <!--ng model es una directiva de tipo bidireccional para formularios que nos permiten asociar valores de tipo input para un atributo de la entidad, ejemplo el id
+                Este imput recibira un valor de tipo numerico pero asociado que era el id, por el ngModel-->
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">TITULO</label>
+                <input type="text" name="titulo" class="form-control" placeholder="Escribe el titulo del Libro"
+                [(ngModel)]="libro.titulo">
+            </div>
+
+            <div class="form-group">
+                <label for="autor">AUTOR</label>
+                <input type="text" name="autor" class="form-control" placeholder="Escribe el autor del Libro"
+                [(ngModel)]="libro.autor">
+            </div>
+
+            <div class="form-group">
+                <label for="genero">GENERO</label>
+                <input type="text" name="genero" class="form-control" placeholder="Escribe el genero del Libro"
+                [(ngModel)]="libro.genero">
+            </div>
+
+            <div class="form-group">
+                <label for="aPublicacion">AÑO DE PUBLICACION</label>
+                <input type="number" name="anioPublicacion" class="form-control" placeholder="Escribe el año de publicacion del Libro"
+                [(ngModel)]="libro.anioPublicacion">
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" name="isbn" class="form-control" placeholder="Escribe el ISBN"
+                [(ngModel)]="libro.isbn">
+            </div>
+
+             <div class="form-group">
+                <label for="editorial">EDITORIAL</label>
+                <input type="text" name="editorial" class="form-control" placeholder="Escribe la editorial del Libro"
+                [(ngModel)]="libro.editorial">
+            </div>
+
+             <div class="form-group">
+                <label for="paginas">PAGINAS</label>
+                <input type="number" name="paginas" class="form-control" placeholder="Escribe el numero de paginas del Libro"
+                [(ngModel)]="libro.paginas">
+            </div>
+
+             <div class="form-group">
+                <label for="precio">PRECIO</label>
+                <input type="number" name="precio" class="form-control" placeholder="Escribe el precio del Libro"
+                [(ngModel)]="libro.precio">
+            </div>
+            <div>
+                <button type="button" class="btn btn-success" (click)="guardar()">Guardar</button>
+            </div>
+        </form>
+
+</div>

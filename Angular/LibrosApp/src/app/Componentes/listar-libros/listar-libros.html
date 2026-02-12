@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="card">
+        <div class="card_header"><h2>Lista de Libros</h2></div>
+        <div class="card-body"></div>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Año de Publicacion</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">Editorial</th>
+      <th scope="col">Paginas</th>
+      <th scope="col">Precio</th>
+    </tr>
+  </thead>
+    <!--Table body o cuerpo de la tabla-->
+  <tbody>
+        @for (libro of libros; track libro.idLibro){
+            <tr>
+                <td>{{libro.idLibro}}</td>
+                <td>{{libro.titulo}}</td>
+                <td>{{libro.autor}}</td>
+                <td>{{libro.genero}}</td>
+                <td>{{libro.anioPublicacion}}</td>
+                <td>{{libro.isbn}}</td>
+                <td>{{libro.editorial}}</td>
+                <td>{{libro.paginas}}</td>
+                <td>{{libro.precio}}</td>
+                <!--botones para eliminar y editar-->
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-info" (click)="editarButton(libro)">Editar</button>
+                        <button type="button" class="btn btn-dark" (click)="eliminarButtom(libro)">Eliminar</button>
+                    </div>
+                </td>
+            </tr>
+        }@empty {
+            <td colspan="6" style="text-align: center;">No existen registros</td>
+        }
+
+  </tbody>
+</table>
+    </div>
+</div>

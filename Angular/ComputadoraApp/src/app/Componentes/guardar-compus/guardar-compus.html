@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header"></div>
+            <h2>Registrar computadoras</h2>
+    </div>
+     <div class="card-body"></div>
+        <th>Ingresa los siguientes datos de la computadoras</th>
+        <form>
+            <div class="form-group">
+                <label for="idCompu2">ID COMPU</label>
+                <input type="number" name="idCompu2" class="form-control" placeholder="Escribe el ID de la Computadora"
+                [(ngModel)]="compu.idCompu2">
+                <!--ng model es una directiva de tipo bidireccional para formularios que nos permiten asociar valores de tipo input para un atributo de la entidad, ejemplo el id
+                Este imput recibira un valor de tipo numerico pero asociado que era el id, por el ngModel-->
+            </div>
+
+            <div class="form-group">
+                <label for="marca">MARCA</label>
+                <input type="text" name="marca" class="form-control" placeholder="Escribe la marca de la Computadora"
+                [(ngModel)]="compu.marca">
+            </div>
+
+            <div class="form-group">
+                <label for="modelo">MODELO</label>
+                <input type="text" name="modelo" class="form-control" placeholder="Escribe el modelo de la Computadora"
+                [(ngModel)]="compu.modelo">
+            </div>
+
+            <div class="form-group">
+                <label for="ram">RAM</label>
+                <input type="number" name="ram" class="form-control" placeholder="Escribe la ram de la Computadora"
+                [(ngModel)]="compu.ram">
+            </div>
+
+            <div class="form-group">
+                <label for="procesador">PROCESADOR</label>
+                <input type="text" name="procesador" class="form-control" placeholder="Escribe el procesador de la Computadora"
+                [(ngModel)]="compu.procesador">
+            </div>
+
+            <div class="form-group">
+                <label for="precio">PRECIO</label>
+                <input type="number" name="precio" class="form-control" placeholder="Escribe el precio de la computadora"
+                [(ngModel)]="compu.precio">
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-success" (click)="guardar()">Guardar</button>
+            </div>
+        </form>
+
+</div>

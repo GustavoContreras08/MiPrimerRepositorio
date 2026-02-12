@@ -1,0 +1,19 @@
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+
+      <h1>{{ title() }}</h1>
+      <p>Registro de Libros</p>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="rigth-side">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-info" (click)="listar()">Listar</button>
+        <button type="button" class="btn btn-dark" (click)="guardar()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<router-outlet />

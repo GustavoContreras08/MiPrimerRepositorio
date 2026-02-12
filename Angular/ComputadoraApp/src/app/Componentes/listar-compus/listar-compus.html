@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card">
+        <div class="card_header"><h2>Lista de Computadoras</h2></div>
+        <div class="card-body"></div>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Ram</th>
+      <th scope="col">Procesador</th>
+      <th scope="col">precio</th>
+    </tr>
+  </thead>
+    <!--Table body o cuerpo de la tabla-->
+  <tbody>
+        @for (compu of compus; track compu.idCompu2){
+            <tr>
+                <td>{{compu.idCompu2}}</td>
+                <td>{{compu.marca}}</td>
+                <td>{{compu.modelo}}</td>
+                <td>{{compu.ram}}</td>
+                <td>{{compu.procesador}}</td>
+                <td>{{compu.precio}}</td>
+                <!--botones para eliminar y editar-->
+                <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-info" (click)="editarButton(compu)">Editar</button>
+                        <button type="button" class="btn btn-dark" (click)="eliminarButtom(compu)">Eliminar</button>
+                    </div>
+                </td>
+            </tr>
+        }@empty {
+            <td colspan="6" style="text-align: center;">No existen registros</td>
+        }
+
+  </tbody>
+</table>
+    </div>
+</div>
